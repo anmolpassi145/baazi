@@ -5,8 +5,6 @@ public class Consumer implements Runnable{
 
     public Consumer(MessageQueue mq) {
         this.mq = mq;
-        Thread thread = new Thread(this, "ConsumerThread");
-        thread.start();
     }
 
     @Override
